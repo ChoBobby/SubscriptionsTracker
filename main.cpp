@@ -33,10 +33,7 @@ int main() {
 	bool custSub5B = false;
 	string custSub5;
 	double custSub5Cost = 0;
-
-	double costMonth = 0;
-	double costYear = 0;
-
+	
 	cout << " ==============================================================================================" << endl;
 	cout << "||                              Welcome to Subsciptions Tracker!                               ||" << endl;
 	cout << "||   Here, you can add all your subsciptions & billed purchases to better manage your money.   ||" << endl;
@@ -46,6 +43,8 @@ int main() {
 	int i = 1;
 
 	do {
+		double costMonth = 0;
+		double costYear = 0;
 		cout << endl << "--------------------------------------" << endl;
 		cout << " Subscriptions Tracker v1.0 MAIN MENU" << endl;
 		cout << "--------------------------------------" << endl;
