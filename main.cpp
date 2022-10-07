@@ -34,8 +34,8 @@ int main() {
 	string custSub5;
 	double custSub5Cost = 0;
 
-	int costMonth;
-	int costYear;
+	double costMonth = 0;
+	double costYear = 0;
 
 	cout << " ==============================================================================================" << endl;
 	cout << "||                              Welcome to Subsciptions Tracker!                               ||" << endl;
@@ -196,30 +196,37 @@ int main() {
 
 			if (netSub) {
 				cout << "Netflix: $" << netSubCost << endl;
+				costMonth += netSubCost;
 			}
 			if (spotSub) {
 				cout << "Spotify: $" << spotSubCost << endl;
+				costMonth += spotSubCost;
 			}
 			if (gymSub) {
 				cout << "Gym: $" << gymSubCost << endl;
+				costMonth += gymSubCost;
 			}
 			if (custSub1B) {
 				cout << custSub1 << ": $" << custSub1Cost << endl;
+				costMonth += custSub1Cost;
 			}
 			if (custSub2B) {
 				cout << custSub2 << ": $" << custSub2Cost << endl;
+				costMonth += custSub2Cost;
 			}
 			if (custSub3B) {
 				cout << custSub3 << ": $" << custSub3Cost << endl;
+				costMonth += custSub3Cost;
 			}
 			if (custSub4B) {
 				cout << custSub4 << ": $" << custSub4Cost << endl;
+				costMonth += custSub4Cost;
 			}
 			if (custSub5B) {
 				cout << custSub5 << ": $" << custSub5Cost << endl;
+				costMonth += custSub5Cost;
 			}
 
-			costMonth = netSubCost + spotSubCost + gymSubCost + custSub1Cost + custSub2Cost + custSub3Cost + custSub4Cost + custSub5Cost;
 			costYear = costMonth * 12;
 
 			cout << endl << "Amount spent per month:	$" << costMonth << endl;
